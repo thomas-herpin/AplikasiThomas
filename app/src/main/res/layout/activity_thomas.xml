@@ -11,40 +11,280 @@
     <FrameLayout
         android:layout_width="334dp"
         android:layout_height="633dp"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="49dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         android:background="@color/cream">
 
-
         <TextView
-            android:id="@+id/Menu"
+            android:id="@+id/menu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="Menu"
             android:textSize="10pt"
+            android:layout_marginTop="8pt"
             android:textStyle="bold"
-            android:layout_marginTop="10pt"/>
+            android:text="Menu" />
+
+        <View
+            android:layout_width="120pt"
+            android:layout_height="0.5pt"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25pt"
+            android:background="@color/black" />
 
         <TextView
-            android:id="@+id/Coffee"
+            android:id="@+id/coffee"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:textSize="6pt"
             android:textStyle="bold"
             android:text="Coffee"
-            android:layout_marginTop="35pt"/>
+            android:layout_marginTop="35pt" />
 
         <TextView
-            android:id="@+id/Desserts"
+            android:id="@+id/espresso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Espresso"
+            android:layout_marginLeft="15pt"
+            android:layout_marginTop="50pt"
+            android:textSize="6pt" />
+
+        <TextView
+            android:id="@+id/harga_espresso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="21k"
+            android:layout_gravity="right"
+            android:layout_marginRight="17pt"
+            android:layout_marginTop="50pt"
+            android:textSize="6pt" />
+
+        <TextView
+            android:id="@+id/americano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Americano"
+            android:layout_marginLeft="15pt"
+            android:layout_marginTop="65pt"
+            android:textSize="6pt" />
+
+        <TextView
+            android:id="@+id/harga_americano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22k"
+            android:layout_marginTop="65pt"
+            android:textSize="6pt"
+            android:layout_gravity="right"
+            android:layout_marginRight="17pt" />
+
+        <TextView
+            android:id="@+id/cappuccino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cappuccino"
+            android:layout_marginLeft="15pt"
+            android:layout_marginTop="80pt"
+            android:textSize="6pt" />
+
+        <TextView
+            android:id="@+id/harga_cappuccino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25k"
+            android:layout_marginTop="80pt"
+            android:layout_gravity="right"
+            android:layout_marginRight="17pt" />
+
+        <TextView
+            android:id="@+id/black_coffee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Black Coffee"
+            android:layout_marginLeft="15pt"
+            android:layout_marginTop="95pt"
+            android:textSize="6pt" />
+
+        <TextView
+            android:id="@+id/harga_black_coffee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15k"
+            android:layout_marginLeft="15pt"
+            android:layout_marginTop="95pt"
+            android:textSize="6pt"
+            android:layout_gravity="right"
+            android:layout_marginRight="17pt" />
+
+        <TextView
+            android:id="@+id/latte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latte"
+            android:layout_marginLeft="15pt"
+            android:layout_marginTop="110pt"
+            android:textSize="6pt" />
+
+        <TextView
+            android:id="@+id/harga_latte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="29k"
+            android:layout_marginTop="110pt"
+            android:layout_gravity="right"
+            android:layout_marginRight="17pt" />
+
+        <TextView
+            android:id="@+id/mocha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mocha"
+            android:layout_marginLeft="15pt"
+            android:layout_marginTop="125pt"
+            android:textSize="6pt" />
+
+        <TextView
+            android:id="@+id/harga_mocha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="29k"
+            android:layout_marginTop="125pt"
+            android:layout_gravity="right"
+            android:layout_marginRight="17pt" />
+
+        <TextView
+            android:id="@+id/snacks"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="6pt"
             android:textStyle="bold"
             android:layout_marginTop="140pt"
             android:layout_gravity="center_horizontal"
-            android:text="Desserts" />
+            android:text="Snacks" />
+
+        <TextView
+            android:id="@+id/pisang_goreng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pisang Goreng"
+            android:layout_marginTop="155pt"
+            android:layout_marginLeft="15pt" />
+
+        <TextView
+            android:id="@+id/harga_pisang_goreng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20k"
+            android:layout_marginTop="155pt"
+            android:layout_gravity="right"
+            android:layout_marginRight="17pt" />
+
+        <TextView
+            android:id="@+id/jamur_crispy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jamur Crispy"
+            android:layout_marginTop="170pt"
+            android:layout_marginLeft="15pt" />
+
+        <TextView
+            android:id="@+id/harga_jamur_crispy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20k"
+            android:layout_marginTop="170pt"
+            android:layout_gravity="right"
+            android:layout_marginRight="17pt" />
+
+        <TextView
+            android:id="@+id/onion_ring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Onion Ring"
+            android:layout_marginTop="185pt"
+            android:layout_marginLeft="15pt" />
+
+        <TextView
+            android:id="@+id/harga_onion_ring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="17k"
+            android:layout_marginTop="185pt"
+            android:layout_gravity="right"
+            android:layout_marginRight="17pt" />
+
+        <TextView
+            android:id="@+id/bakwan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bakwan"
+            android:layout_marginTop="200pt"
+            android:layout_marginLeft="15pt" />
+
+        <TextView
+            android:id="@+id/harga_bakwan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20k"
+            android:layout_marginTop="200pt"
+            android:layout_gravity="right"
+            android:layout_marginRight="17pt"/>
+
+        <TextView
+            android:id="@+id/french_fries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="French Fries"
+            android:layout_marginTop="215pt"
+            android:layout_marginLeft="15pt" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22k"
+            android:layout_marginTop="215pt"
+            android:layout_gravity="right"
+            android:layout_marginRight="17pt" />
+
+        <TextView
+            android:id="@+id/cireng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cireng"
+            android:layout_marginTop="230pt"
+            android:layout_marginLeft="15pt" />
+
+        <TextView
+            android:id="@+id/harga_cireng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22k"
+            android:layout_marginTop="230pt"
+            android:layout_gravity="right"
+            android:layout_marginRight="17pt" />
+
+        <TextView
+            android:id="@+id/lupis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lupis"
+            android:layout_marginTop="245pt"
+            android:layout_marginLeft="15pt" />
+
+        <TextView
+            android:id="@+id/harga_lupis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18k"
+            android:layout_gravity="right"
+            android:layout_marginTop="245pt"
+            android:layout_marginRight="17pt" />
+
     </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
