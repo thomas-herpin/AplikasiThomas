@@ -13,10 +13,13 @@
         android:theme="@style/Theme.ThomasApp"
         tools:targetApi="31">
         <activity
+            android:name=".thomasActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".thomasActivity"
+            android:name=".kalkulator_activity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.ThomasApp">

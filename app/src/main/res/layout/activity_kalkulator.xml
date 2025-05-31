@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".kalkulator_activity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/txtJudul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kalkulator Sederhana: Thomas Herpin"
+            android:textColor="@color/black"
+            android:textSize="9pt"
+            android:fontFamily="sans-serif-medium"/>
+
+        <EditText
+            android:id="@+id/edtNilaiA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:layout_marginTop="5pt"
+            android:textColorHint="@color/grey"
+            android:hint="Nilai Pertama (A)"/>
+
+        <EditText
+            android:id="@+id/edtNilaiB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:textColorHint="@color/grey"
+            android:hint="Nilai Kedua (B)"/>
+
+        <Button
+            android:id="@+id/btnTambah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10pt"
+            android:text="Tambah"
+            android:textColor="@color/white"
+            android:textSize="7pt"
+            android:textAllCaps="false"
+            android:background="@drawable/button_bg"
+            app:backgroundTint="@null"/>
+
+        <Button
+            android:id="@+id/btnKali"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kali"
+            android:layout_marginTop="5pt"
+            android:textColor="@color/white"
+            android:background="@drawable/button_bg"
+            android:textAllCaps="false"
+            android:textSize="7pt"
+            app:backgroundTint="@null"/>
+
+        <Button
+            android:id="@+id/btnBagi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bagi"
+            android:layout_marginTop="5pt"
+            android:textColor="@color/white"
+            android:textSize="7pt"
+            android:textAllCaps="false"
+            android:background="@drawable/button_bg"
+            app:backgroundTint="@null"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15pt"
+            android:textSize="7pt"
+            android:textColor="@color/black"
+            android:text="Hasil"/>
+
+        <TextView
+            android:id="@+id/txtHasil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="25pt"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-medium"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
